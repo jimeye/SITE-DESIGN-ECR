@@ -75,7 +75,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section bg-primary-950 text-neutral-cream">
+      <section className="section bg-neutral-beige">
         <div className="container-custom text-center">
           <h2 className="heading-lg mb-6">Votre projet mérite l&apos;excellence</h2>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-primary-800">

@@ -23,7 +23,7 @@ export default function ServicesPage() {
       />
 
       {/* Services Grid */}
-      <section className="bg-neutral-beige pb-16 pt-4 md:pb-24 md:pt-6 lg:pb-32 lg:pt-8">
+      <section className="bg-neutral-beige pb-16 pt-2 md:pb-24 md:pt-4 lg:pb-32 lg:pt-6">
         <div className="container-custom">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (

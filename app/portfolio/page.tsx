@@ -78,16 +78,18 @@ export default function PortfolioPage() {
       <section className="section bg-primary-950 text-neutral-cream">
         <div className="container-custom text-center">
           <h2 className="heading-lg mb-6">Votre projet mérite l&apos;excellence</h2>
-          <p className="mx-auto mb-10 max-w-2xl text-lg text-neutral-beige/80">
+          <p className="mx-auto mb-10 max-w-2xl text-lg text-primary-800">
             Laissez-nous créer un intérieur unique qui reflète votre
             personnalité et vos aspirations.
           </p>
-          <Link
-            href="/contact"
-            className="btn-primary bg-accent text-primary-950 hover:bg-accent-dark"
-          >
-            Démarrer votre projet
-          </Link>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href="/contact" className="btn-primary min-w-[240px]">
+              Demander un devis
+            </Link>
+            <Link href="/services" className="btn-secondary min-w-[240px]">
+              Découvrir nos services
+            </Link>
+          </div>
         </div>
       </section>
     </>

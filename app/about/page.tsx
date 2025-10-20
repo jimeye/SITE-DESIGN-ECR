@@ -145,7 +145,7 @@ export default function AboutPage() {
 
       {/* CTA Section */}
       <AnimatedSection>
-        <section className="section bg-white">
+        <section className="section bg-neutral-beige">
         <div className="container-custom text-center">
           <h2 className="heading-lg mb-6">Travaillons ensemble</h2>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-primary-800">
@@ -153,10 +153,10 @@ export default function AboutPage() {
             Contactez-nous pour en discuter.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href="/contact" className="btn-primary">
-              Nous contacter
+            <Link href="/contact" className="btn-primary min-w-[240px]">
+              Demander un devis
             </Link>
-            <Link href="/services" className="btn-secondary">
+            <Link href="/services" className="btn-secondary min-w-[240px]">
               Découvrir nos services
             </Link>
           </div>

@@ -126,7 +126,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="section bg-white">
+      <section className="section bg-neutral-beige">
         <div className="container-custom text-center">
           <h2 className="heading-lg mb-6">Intéressé par un projet similaire ?</h2>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-primary-800">
@@ -134,10 +134,10 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             nous pouvons créer un intérieur d'exception pour vous.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href="/contact" className="btn-primary">
+            <Link href="/contact" className="btn-primary min-w-[240px]">
               Demander un devis
             </Link>
-            <Link href="/portfolio" className="btn-secondary">
+            <Link href="/portfolio" className="btn-secondary min-w-[240px]">
               Voir tous les projets
             </Link>
           </div>

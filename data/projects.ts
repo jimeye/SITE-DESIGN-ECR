@@ -20,7 +20,7 @@ export const projects: Project[] = [
     slug: 'appartement-haussmannien-paris-16',
     title: 'Appartement Haussmannien - Paris 16ème',
     excerpt:
-      "Rénovation prestige haussmannien",
+      "Rénovation d'exception d'un appartement haussmannien avec conservation du patrimoine d'origine",
     description:
       "Transformation complète d'un appartement haussmannien de 180m² dans le 16ème arrondissement. Conservation et restauration des moulures, parquets anciens et cheminées en marbre. Création d'une cuisine ouverte sur-mesure et d'un dressing de 25m² dans la suite parentale. Association subtile entre patrimoine et modernité.",
     category: 'Rénovation',

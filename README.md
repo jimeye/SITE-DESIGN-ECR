@@ -4,7 +4,7 @@ Site web professionnel pour ECR, spécialiste en menuiserie, rénovation d'inté
 
 ## 🎨 Design
 
-Design minimaliste et élégant inspiré de valeriejosephcreative.com, avec :
+Design minimaliste et élégant, avec :
 - Palette de couleurs beiges chauds et noirs sophistiqués
 - Typographie raffinée (Inter + Playfair Display)
 - Espacements généreux et mise en page aérée

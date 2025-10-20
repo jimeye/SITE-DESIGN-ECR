@@ -1,0 +1,23 @@
+/* TEAM */
+Designer & Developer: Joseph Studio Creative
+Site: https://josephstudiocreative.com
+Location: Paris, France
+
+/* SITE */
+Last update: 2024
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: React 18, Next.js 14, TypeScript
+Styling: Tailwind CSS
+Software: Cursor, VS Code
+
+/* THANKS */
+Fonts: Google Fonts (Inter, Playfair Display)
+Icons: Heroicons
+Images: Lorem Picsum (placeholder)
+
+/* SITE INFO */
+Client: ECR - Étude Conception Réalisations
+Domain: ecr-agencement.fr
+Location: Bobigny, France
+Services: Menuiserie, Rénovation, Agencement
+

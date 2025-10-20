@@ -6,7 +6,6 @@ Tous les fichiers ont été créés pour le site ECR (Étude Conception Réalisa
 
 ## 🎨 Design & Style
 
-- **Inspiration** : valeriejosephcreative.com
 - **Palette** : Beiges chauds (#e8dcc4, #d4c5a9) + Noirs élégants (#0a0a0a, #1a1a1a)
 - **Typographie** : Inter (corps) + Playfair Display (titres)
 - **Style** : Minimaliste, élégant, sophistiqué, espacements généreux

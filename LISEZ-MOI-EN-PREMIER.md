@@ -4,7 +4,7 @@
 
 Votre site web complet pour **ECR (Étude Conception Réalisations)** a été généré avec succès.
 
-**Style** : Inspiré de valeriejosephcreative.com - élégant, minimaliste, sophistiqué  
+**Style** : Design élégant, minimaliste et sophistiqué  
 **Contenu** : Textes en français adaptés à ECR menuiserie/rénovation/agencement  
 **Stack** : Next.js 14 + TypeScript + Tailwind CSS
 
@@ -212,6 +212,6 @@ Votre site ECR est prêt. Il ne reste plus qu'à :
 ---
 
 *Généré avec Next.js 14, TypeScript, Tailwind CSS*  
-*Design inspiré de valeriejosephcreative.com*  
+*Design professionnel minimaliste et élégant*  
 *Contenu adapté pour ECR - Menuiserie, Rénovation & Agencement*
 

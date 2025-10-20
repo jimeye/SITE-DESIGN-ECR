@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { Metadata } from 'next'
 import Link from 'next/link'
 import { Hero } from '@/components/Hero'
 import { ProjectCard } from '@/components/ProjectCard'
@@ -76,7 +75,7 @@ export default function PortfolioPage() {
       {/* CTA Section */}
       <section className="section bg-primary-950 text-neutral-cream">
         <div className="container-custom text-center">
-          <h2 className="heading-lg mb-6">Votre projet mérite l'excellence</h2>
+          <h2 className="heading-lg mb-6">Votre projet mérite l&apos;excellence</h2>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-neutral-beige/80">
             Laissez-nous créer un intérieur unique qui reflète votre
             personnalité et vos aspirations.

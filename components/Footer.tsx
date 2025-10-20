@@ -53,7 +53,7 @@ export function Footer() {
               </span>
             </h3>
             <p className="mb-6 text-sm leading-relaxed text-neutral-beige/80">
-              Menuiserie, Rénovation d'intérieur et Agencement haut de gamme.
+              Menuiserie, Rénovation d&apos;intérieur et Agencement haut de gamme.
               ECR réalise des intérieurs prestigieux, confortables et élégants
               à Paris et région parisienne.
             </p>

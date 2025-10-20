@@ -38,9 +38,9 @@ export default function Home() {
             <p className="subheading mb-4">Notre expertise</p>
             <h2 className="heading-lg mb-6">Nos services</h2>
             <p className="mx-auto max-w-2xl text-lg text-primary-800">
-              ECR c'est avant tout une expertise dans les métiers de la
-              menuiserie, de la rénovation d'intérieur et l'agencement
-              d'intérieur
+              ECR c&apos;est avant tout une expertise dans les métiers de la
+              menuiserie, de la rénovation d&apos;intérieur et l&apos;agencement
+              d&apos;intérieur
             </p>
           </div>
 

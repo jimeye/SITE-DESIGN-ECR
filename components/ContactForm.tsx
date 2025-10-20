@@ -52,7 +52,7 @@ export function ContactForm() {
       })
 
       if (!response.ok) {
-        throw new Error('Erreur lors de l\'envoi du formulaire')
+        throw new Error("Erreur lors de l'envoi du formulaire")
       }
 
       setIsSuccess(true)

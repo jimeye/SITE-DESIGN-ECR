@@ -58,9 +58,7 @@ export function ProcessSteps() {
               <div className="relative">
                 {/* Number Circle */}
                 <div className="mb-6 mx-auto flex h-16 w-16 items-center justify-center bg-accent-light">
-                  <span className="font-serif text-2xl font-light text-primary-950">
-                    {step.number}
-                  </span>
+                  <AnimatedNumber value={parseInt(step.number)} delay={index * 0.2} />
                 </div>
 
                 {/* Title & Description */}

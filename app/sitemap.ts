@@ -5,7 +5,7 @@ import { getAllProjectSlugs } from '@/data/projects'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
-  // Static pages
+  // Static pages (logos exclu)
   const routes = ['', '/about', '/services', '/portfolio', '/contact'].map(
     (route) => ({
       url: `${baseUrl}${route}`,

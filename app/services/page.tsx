@@ -71,12 +71,14 @@ export default function ServicesPage() {
                       {service.tagline}
                     </p>
                   </div>
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="btn-primary inline-flex w-fit"
-                  >
-                    En savoir plus
-                  </Link>
+                  <div className="flex justify-center sm:justify-start">
+                    <Link
+                      href={`/services/${service.slug}`}
+                      className="btn-primary min-w-[240px]"
+                    >
+                      En savoir plus
+                    </Link>
+                  </div>
                 </div>
 
                 <div

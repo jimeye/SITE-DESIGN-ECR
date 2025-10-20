@@ -25,9 +25,13 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section className="bg-neutral-beige pb-16 pt-2 md:pb-24 md:pt-4 lg:pb-32 lg:pt-6">
         <div className="container-custom">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 lg:grid-cols-3">
             {services.map((service, index) => (
-              <AnimatedCard key={service.id} delay={index * 0.15}>
+              <AnimatedCard
+                key={service.id}
+                delay={index * 0.15}
+                className={index === 2 ? 'col-span-2 lg:col-span-1' : ''}
+              >
                 <ServiceCard
                   title={service.title}
                   excerpt={service.excerpt}

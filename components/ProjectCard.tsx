@@ -51,12 +51,12 @@ export function ProjectCard({
       </Link>
 
       {/* Content Below Image */}
-      <div className="p-6">
-        <h3 className="mb-2 font-serif text-xl font-light">{title}</h3>
-        <p className="mb-3 line-clamp-2 text-sm text-primary-700">{excerpt}</p>
+      <div className="flex flex-col p-6">
+        <h3 className="mb-2 flex min-h-[3rem] items-center font-serif text-xl font-light">{title}</h3>
+        <p className="mb-3 min-h-[3rem] text-sm text-primary-700 line-clamp-2">{excerpt}</p>
         <Link
           href={`/portfolio/${slug}`}
-          className="inline-flex items-center text-sm font-medium uppercase tracking-wider text-primary-950 transition-colors hover:text-primary-700"
+          className="mt-auto inline-flex items-center text-sm font-medium uppercase tracking-wider text-primary-950 transition-colors hover:text-primary-700"
         >
           Voir le projet
           <svg

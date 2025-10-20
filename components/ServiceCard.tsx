@@ -79,7 +79,7 @@ export function ServiceCard({
       </p>
 
       {/* Tagline & CTA - alignés en bas ensemble */}
-      <div className="mt-auto">
+      <div className="mt-auto text-center">
         {/* Tagline */}
         <p className="mb-4 font-serif text-lg font-light italic text-accent-dark md:mb-6 md:text-xl">
           {tagline}

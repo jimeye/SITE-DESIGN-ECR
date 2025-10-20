@@ -70,11 +70,11 @@ export function ServiceCard({
         {iconPaths[icon] || iconPaths.menuiserie}
       </div>
 
-      {/* Title - hauteur minimale */}
-      <h3 className="mb-3 min-h-[3rem] font-serif text-xl font-light tracking-tight md:mb-4 md:min-h-[3.5rem] md:text-3xl">{title}</h3>
+      {/* Title - hauteur minimale fixe */}
+      <h3 className="mb-3 flex min-h-[4.5rem] items-center justify-center font-serif text-xl font-light tracking-tight md:mb-4 md:min-h-[5rem] md:text-3xl">{title}</h3>
 
-      {/* Excerpt - hauteur flexible */}
-      <p className="mx-auto mb-4 max-w-sm flex-grow text-sm leading-relaxed text-primary-700 md:mb-6 md:text-base md:max-w-md">
+      {/* Excerpt - hauteur minimale fixe */}
+      <p className="mx-auto mb-4 flex min-h-[6rem] max-w-sm items-start text-sm leading-relaxed text-primary-700 md:mb-6 md:min-h-[7rem] md:text-base md:max-w-md">
         {excerpt}
       </p>
 

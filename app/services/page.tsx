@@ -112,19 +112,21 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section bg-primary-950 text-neutral-cream">
+      <section className="section bg-neutral-beige">
         <div className="container-custom text-center">
           <h2 className="heading-lg mb-6">Discutons de votre projet</h2>
-          <p className="mx-auto mb-10 max-w-2xl text-lg text-neutral-beige/80">
+          <p className="mx-auto mb-10 max-w-2xl text-lg text-primary-800">
             Chaque projet est unique. Contactez-nous pour obtenir un devis
             personnalisé adapté à vos besoins.
           </p>
-          <Link
-            href="/contact"
-            className="btn-primary bg-accent text-primary-950 hover:bg-accent-dark"
-          >
-            Demander un devis
-          </Link>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href="/contact" className="btn-primary min-w-[240px]">
+              Demander un devis
+            </Link>
+            <Link href="/portfolio" className="btn-secondary min-w-[240px]">
+              Voir nos réalisations
+            </Link>
+          </div>
         </div>
       </section>
     </>

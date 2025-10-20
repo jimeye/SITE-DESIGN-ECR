@@ -66,7 +66,7 @@ export default function ServicesPage() {
                   <p className="mb-6 text-lg leading-relaxed text-primary-800">
                     {service.description}
                   </p>
-                  <div className="mb-6">
+                  <div className="mb-6 text-center sm:text-left">
                     <p className="font-serif text-2xl font-light italic text-accent-dark">
                       {service.tagline}
                     </p>

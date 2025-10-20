@@ -31,6 +31,10 @@ const steps: Step[] = [
   },
 ]
 
+'use client'
+
+import { AnimatedNumber } from './AnimatedNumber'
+
 export function ProcessSteps() {
   return (
     <section className="section bg-white">

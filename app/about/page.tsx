@@ -73,8 +73,8 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          </div>
-        </section>
+        </div>
+      </section>
       </AnimatedSection>
 
       {/* Values Section */}
@@ -139,8 +139,8 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-          </div>
-        </section>
+        </div>
+      </section>
       </AnimatedSection>
 
       {/* CTA Section */}
@@ -160,8 +160,8 @@ export default function AboutPage() {
               Découvrir nos services
             </Link>
           </div>
-          </div>
-        </section>
+        </div>
+      </section>
       </AnimatedSection>
     </>
   )

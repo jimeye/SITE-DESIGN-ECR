@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Hero } from '@/components/Hero'
 import { ProjectCard } from '@/components/ProjectCard'
+import { AnimatedCard } from '@/components/AnimatedSection'
 import { projects, getAllTags } from '@/data/projects'
 
 export default function PortfolioPage() {
@@ -50,18 +51,19 @@ export default function PortfolioPage() {
       <section className="section bg-white">
         <div className="container-custom">
           {filteredProjects.length > 0 ? (
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {filteredProjects.map((project) => (
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {filteredProjects.map((project, index) => (
+              <AnimatedCard key={project.id} delay={index * 0.1}>
                 <ProjectCard
-                  key={project.id}
                   title={project.title}
                   excerpt={project.excerpt}
                   image={project.image}
                   tags={project.tags}
                   slug={project.slug}
                 />
-              ))}
-            </div>
+              </AnimatedCard>
+            ))}
+          </div>
           ) : (
             <div className="py-20 text-center">
               <p className="text-lg text-primary-700">

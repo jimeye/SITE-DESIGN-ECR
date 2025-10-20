@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { Hero } from '@/components/Hero'
 import { ServiceCard } from '@/components/ServiceCard'
+import { AnimatedCard } from '@/components/AnimatedSection'
 import { services } from '@/data/services'
 
 export const metadata: Metadata = {
@@ -25,15 +26,16 @@ export default function ServicesPage() {
       <section className="bg-neutral-beige pb-16 pt-4 md:pb-24 md:pt-6 lg:pb-32 lg:pt-8">
         <div className="container-custom">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
-              <ServiceCard
-                key={service.id}
-                title={service.title}
-                excerpt={service.excerpt}
-                tagline={service.tagline}
-                icon={service.icon}
-                href={`/services/${service.slug}`}
-              />
+            {services.map((service, index) => (
+              <AnimatedCard key={service.id} delay={index * 0.15}>
+                <ServiceCard
+                  title={service.title}
+                  excerpt={service.excerpt}
+                  tagline={service.tagline}
+                  icon={service.icon}
+                  href={`/services/${service.slug}`}
+                />
+              </AnimatedCard>
             ))}
           </div>
         </div>

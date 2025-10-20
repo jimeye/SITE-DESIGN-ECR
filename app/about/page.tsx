@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Hero } from '@/components/Hero'
+import { AnimatedSection } from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'À propos',
@@ -72,11 +73,13 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </AnimatedSection>
 
       {/* Values Section */}
-      <section className="section bg-neutral-beige">
+      <AnimatedSection>
+        <section className="section bg-neutral-beige">
         <div className="container-custom">
           <div className="mb-16 text-center">
             <p className="subheading mb-4">Nos valeurs</p>
@@ -136,11 +139,13 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </AnimatedSection>
 
       {/* CTA Section */}
-      <section className="section bg-white">
+      <AnimatedSection>
+        <section className="section bg-white">
         <div className="container-custom text-center">
           <h2 className="heading-lg mb-6">Travaillons ensemble</h2>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-primary-800">
@@ -155,8 +160,9 @@ export default function AboutPage() {
               Découvrir nos services
             </Link>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </AnimatedSection>
     </>
   )
 }

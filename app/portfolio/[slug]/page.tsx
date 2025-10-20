@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getProjectBySlug, getAllProjectSlugs } from '@/data/projects'
 import { ProjectGallery } from '@/components/ProjectGallery'
+import { AnimatedSection } from '@/components/AnimatedSection'
 
 interface ProjectPageProps {
   params: {

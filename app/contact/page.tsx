@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { Hero } from '@/components/Hero'
 import { ContactForm } from '@/components/ContactForm'
+import { AnimatedSection } from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -20,7 +21,8 @@ export default function ContactPage() {
       />
 
       {/* Contact Section */}
-      <section className="section bg-white">
+      <AnimatedSection>
+        <section className="section bg-white">
         <div className="container-custom">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Contact Information */}
@@ -159,8 +161,9 @@ export default function ContactPage() {
               <span className="text-sm">7, rue Bernard - 93000 BOBIGNY</span>
             </p>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </AnimatedSection>
     </>
   )
 }

@@ -1,0 +1,7 @@
+# robots.txt for ECR
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ecr-agencement.fr/sitemap.xml
+

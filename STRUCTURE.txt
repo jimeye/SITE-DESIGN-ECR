@@ -1,0 +1,133 @@
+SITE-DESIGN/
+│
+├── app/                                # Pages Next.js (App Router)
+│   ├── layout.tsx                     # Layout racine avec Header/Footer
+│   ├── page.tsx                       # Page d'accueil
+│   ├── globals.css                    # Styles globaux + Tailwind
+│   ├── sitemap.ts                     # Génération sitemap.xml
+│   │
+│   ├── about/
+│   │   └── page.tsx                   # Page À propos
+│   │
+│   ├── services/
+│   │   ├── page.tsx                   # Index services
+│   │   └── [slug]/
+│   │       └── page.tsx               # Pages services dynamiques
+│   │
+│   ├── portfolio/
+│   │   ├── page.tsx                   # Galerie portfolio (filtrable)
+│   │   └── [slug]/
+│   │       └── page.tsx               # Études de cas projets
+│   │
+│   ├── contact/
+│   │   └── page.tsx                   # Formulaire contact
+│   │
+│   └── api/
+│       └── contact/
+│           └── route.ts               # API route formulaire
+│
+├── components/                         # Composants React réutilisables
+│   ├── Header.tsx                     # Navigation + menu mobile
+│   ├── Footer.tsx                     # Footer avec liens
+│   ├── Logo.tsx                       # Logo SVG ECR
+│   ├── Hero.tsx                       # Hero sections (2 variantes)
+│   ├── SEO.tsx                        # Meta tags + JSON-LD
+│   ├── ServiceCard.tsx                # Carte service
+│   ├── ProjectCard.tsx                # Carte projet
+│   ├── Testimonial.tsx                # Témoignage client
+│   ├── ProcessSteps.tsx               # 4 étapes processus
+│   └── ContactForm.tsx                # Formulaire validé
+│
+├── data/                               # Données statiques
+│   ├── services.ts                    # 3 services (menuiserie, réno, agencement)
+│   ├── projects.ts                    # 5 projets portfolio
+│   └── testimonials.ts                # 4 témoignages clients
+│
+├── lib/                                # Utilitaires
+│   └── utils.ts                       # Fonctions helper
+│
+├── tests/                              # Tests unitaires
+│   ├── setup.ts                       # Config Vitest
+│   ├── ServiceCard.test.tsx           # Tests ServiceCard
+│   └── ContactForm.test.tsx           # Tests ContactForm
+│
+├── public/                             # Assets statiques
+│   ├── robots.txt                     # SEO robots
+│   ├── placeholder-images.md          # Liste images nécessaires
+│   ├── .gitkeep
+│   ├── [hero-home.jpg]                # À ajouter
+│   ├── [about-image.jpg]              # À ajouter
+│   ├── [og-image.jpg]                 # À ajouter
+│   │
+│   ├── portfolio/                     # Images projets (à ajouter)
+│   │   ├── [haussmann-*.jpg]
+│   │   ├── [villa-*.jpg]
+│   │   ├── [penthouse-*.jpg]
+│   │   ├── [loft-*.jpg]
+│   │   └── [architecte-*.jpg]
+│   │
+│   └── testimonials/                  # Avatars (à ajouter)
+│       └── [avatar-*.jpg]
+│
+├── scripts/                            # Scripts utilitaires
+│   ├── setup-placeholder-images.sh    # Télécharger images placeholder
+│   └── README.md
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                     # GitHub Actions CI/CD
+│
+├── Configuration
+│   ├── package.json                   # Dépendances + scripts
+│   ├── tsconfig.json                  # TypeScript config
+│   ├── tailwind.config.ts             # Tailwind design system
+│   ├── postcss.config.mjs             # PostCSS
+│   ├── next.config.mjs                # Next.js config
+│   ├── vitest.config.ts               # Vitest config
+│   ├── .eslintrc.json                 # ESLint rules
+│   ├── .prettierrc                    # Prettier config
+│   ├── .gitignore                     # Git ignore
+│   ├── Dockerfile                     # Docker production
+│   └── .dockerignore                  # Docker ignore
+│
+└── Documentation
+    ├── README.md                       # Documentation complète
+    ├── SUMMARY.md                      # Récapitulatif projet
+    ├── GETTING-STARTED.md              # Guide démarrage
+    ├── INSTRUCTIONS-LANCEMENT.md       # Instructions pas à pas
+    ├── DEMARRAGE-RAPIDE.md            # Démarrage 5 minutes
+    ├── STRUCTURE.txt                   # Ce fichier
+    └── env.example.txt                 # Variables d'environnement
+
+═══════════════════════════════════════════════════════════════
+
+STATISTIQUES
+
+• Pages créées : 7 pages principales + dynamiques
+• Composants : 13 composants réutilisables
+• Tests : 12 tests unitaires
+• Fichiers générés : ~55 fichiers
+• Lignes de code : ~4500+ lignes
+• Design tokens : Palette complète Tailwind
+
+TECHNOLOGIES
+
+• Next.js 14+ (App Router)
+• TypeScript (strict)
+• Tailwind CSS
+• React Hook Form + Zod
+• Vitest + React Testing Library
+• ESLint + Prettier
+• Docker
+• GitHub Actions
+
+PROCHAINES ÉTAPES
+
+1. pnpm install
+2. cp env.example.txt .env.local
+3. bash scripts/setup-placeholder-images.sh (optionnel)
+4. pnpm dev
+5. Ouvrir http://localhost:3000
+
+═══════════════════════════════════════════════════════════════
+

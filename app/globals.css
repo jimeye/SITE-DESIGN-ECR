@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary-50: 250 249 247;
+    --color-primary-100: 245 243 239;
+    --color-primary-200: 232 220 196;
+    --color-primary-300: 212 197 169;
+    --color-primary-400: 192 174 142;
+    --color-primary-500: 172 151 115;
+    --color-primary-600: 138 122 92;
+    --color-primary-700: 103 92 69;
+    --color-primary-800: 69 61 46;
+    --color-primary-900: 26 26 26;
+    --color-primary-950: 10 10 10;
+
+    /* Accent Colors */
+    --color-accent-light: 232 220 196;
+    --color-accent: 212 197 169;
+    --color-accent-dark: 192 174 142;
+
+    /* Neutral Colors */
+    --color-neutral-cream: 250 249 247;
+    --color-neutral-beige: 245 243 239;
+    --color-neutral-warm: 232 220 196;
+
+    /* Background & Foreground */
+    --background: var(--color-neutral-cream);
+    --foreground: var(--color-primary-950);
+  }
+
+  .dark {
+    --background: var(--color-primary-950);
+    --foreground: var(--color-neutral-cream);
+  }
+
+  * {
+    @apply border-primary-200;
+  }
+
+  body {
+    @apply bg-neutral-cream text-primary-950 antialiased;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Button Styles */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-none px-7 py-3.5 text-[0.81rem] font-medium uppercase tracking-wider transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-950 text-neutral-cream hover:bg-primary-800 focus-visible:ring-primary-700;
+  }
+
+  .btn-secondary {
+    @apply btn border-2 border-primary-950 bg-transparent text-primary-950 hover:bg-primary-950 hover:text-neutral-cream focus-visible:ring-primary-700;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-primary-950 underline decoration-1 underline-offset-4 hover:decoration-2 focus-visible:ring-primary-700;
+  }
+
+  /* Typography */
+  .heading-xl {
+    @apply font-serif text-5xl font-light leading-tight tracking-tight md:text-6xl lg:text-7xl;
+  }
+
+  .heading-lg {
+    @apply font-serif text-4xl font-light leading-tight tracking-tight md:text-5xl;
+  }
+
+  .heading-md {
+    @apply font-serif text-3xl font-light leading-snug tracking-tight md:text-4xl;
+  }
+
+  .heading-sm {
+    @apply font-serif text-2xl font-light leading-snug tracking-tight md:text-3xl;
+  }
+
+  .subheading {
+    @apply text-sm font-medium uppercase tracking-widest text-primary-700;
+  }
+
+  /* Section Containers */
+  .section {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .section-sm {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .container-custom {
+    @apply mx-auto w-full max-w-7xl px-6 md:px-8 lg:px-12;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply rounded-none bg-white p-8 shadow-sm transition-shadow duration-300 hover:shadow-md;
+  }
+
+  /* Input Styles */
+  .input {
+    @apply w-full rounded-none border border-primary-300 bg-white px-4 py-3 text-base text-primary-950 placeholder:text-primary-400 focus:border-primary-950 focus:outline-none focus:ring-1 focus:ring-primary-950;
+  }
+
+  .textarea {
+    @apply input min-h-[150px] resize-y;
+  }
+
+  .label {
+    @apply mb-2 block text-sm font-medium uppercase tracking-wide text-primary-900;
+  }
+
+  /* Overlay Effect */
+  .overlay {
+    @apply relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-t before:from-primary-950/80 before:to-transparent before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
+

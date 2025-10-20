@@ -1,3 +1,7 @@
+'use client'
+
+import { AnimatedNumber } from './AnimatedNumber'
+
 interface Step {
   number: string
   title: string
@@ -30,10 +34,6 @@ const steps: Step[] = [
       'Installation finale, vérification de chaque détail et présentation de votre projet achevé. Garantie et suivi.',
   },
 ]
-
-'use client'
-
-import { AnimatedNumber } from './AnimatedNumber'
 
 export function ProcessSteps() {
   return (

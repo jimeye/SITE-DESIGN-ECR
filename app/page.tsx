@@ -4,6 +4,7 @@ import { ServiceCard } from '@/components/ServiceCard'
 import { ProcessSteps } from '@/components/ProcessSteps'
 import { ProjectCard } from '@/components/ProjectCard'
 import { Testimonial } from '@/components/Testimonial'
+import { AnimatedCard, AnimatedSection } from '@/components/AnimatedSection'
 import { services } from '@/data/services'
 import { getFeaturedProjects } from '@/data/projects'
 import { getFeaturedTestimonials } from '@/data/testimonials'
@@ -46,8 +47,9 @@ export default function Home() {
 
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-3">
             {services.map((service, index) => (
-              <div
+              <AnimatedCard
                 key={service.id}
+                delay={index * 0.15}
                 className={index === 2 ? 'col-span-2 lg:col-span-1' : ''}
               >
                 <ServiceCard
@@ -57,7 +59,7 @@ export default function Home() {
                   icon={service.icon}
                   href={`/services/${service.slug}`}
                 />
-              </div>
+              </AnimatedCard>
             ))}
           </div>
 
@@ -70,7 +72,9 @@ export default function Home() {
       </section>
 
       {/* Process Steps */}
-      <ProcessSteps />
+      <AnimatedSection>
+        <ProcessSteps />
+      </AnimatedSection>
 
       {/* Featured Projects */}
       <section className="section bg-neutral-beige">
@@ -84,15 +88,16 @@ export default function Home() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {featuredProjects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                title={project.title}
-                excerpt={project.excerpt}
-                image={project.image}
-                tags={project.tags}
-                slug={project.slug}
-              />
+            {featuredProjects.map((project, index) => (
+              <AnimatedCard key={project.id} delay={index * 0.15}>
+                <ProjectCard
+                  title={project.title}
+                  excerpt={project.excerpt}
+                  image={project.image}
+                  tags={project.tags}
+                  slug={project.slug}
+                />
+              </AnimatedCard>
             ))}
           </div>
 
@@ -113,15 +118,16 @@ export default function Home() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {testimonials.map((testimonial) => (
-              <Testimonial
-                key={testimonial.id}
-                quote={testimonial.quote}
-                author={testimonial.author}
-                role={testimonial.role}
-                company={testimonial.company}
-                avatar={testimonial.avatar}
-              />
+            {testimonials.map((testimonial, index) => (
+              <AnimatedCard key={testimonial.id} delay={index * 0.15}>
+                <Testimonial
+                  quote={testimonial.quote}
+                  author={testimonial.author}
+                  role={testimonial.role}
+                  company={testimonial.company}
+                  avatar={testimonial.avatar}
+                />
+              </AnimatedCard>
             ))}
           </div>
         </div>

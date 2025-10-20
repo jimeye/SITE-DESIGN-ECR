@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getProjectBySlug, getAllProjectSlugs } from '@/data/projects'
+import { ProjectGallery } from '@/components/ProjectGallery'
 
 interface ProjectPageProps {
   params: {
@@ -115,26 +116,11 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         </div>
       </section>
 
-      {/* Project Gallery */}
+      {/* Project Gallery with Lightbox */}
       <section className="section bg-neutral-beige">
         <div className="container-custom">
           <h2 className="heading-md mb-12 text-center">Galerie photos</h2>
-          <div className="grid gap-8 md:grid-cols-2">
-            {project.images.map((image, index) => (
-              <div
-                key={index}
-                className="relative aspect-[4/3] overflow-hidden bg-white"
-              >
-                <Image
-                  src={image}
-                  alt={`${project.title} - Photo ${index + 1}`}
-                  fill
-                  className="object-cover transition-transform duration-500 hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            ))}
-          </div>
+          <ProjectGallery images={project.images} projectTitle={project.title} />
         </div>
       </section>
 

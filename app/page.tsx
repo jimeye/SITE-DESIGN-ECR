@@ -45,12 +45,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <AnimatedCard
                 key={service.id}
                 delay={index * 0.15}
-                className={index === 2 ? 'col-span-2 lg:col-span-1' : ''}
+                className=""
               >
                 <ServiceCard
                   title={service.title}

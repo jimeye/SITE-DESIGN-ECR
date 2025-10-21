@@ -115,7 +115,7 @@ export function Header() {
           isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'
         }`}
       >
-        <div className="container-custom border-t border-primary-200 bg-white/80 backdrop-blur-sm pb-6 pt-4">
+        <div className="container-custom border-t border-primary-200 bg-white/70 backdrop-blur-sm pb-6 pt-4">
           <div className="flex flex-col space-y-4">
             {navigation.map((item) => (
               <Link

@@ -69,7 +69,7 @@ export function Hero({
       {/* Contenu par-dessus l'image */}
       <div className="container-custom relative z-10">
         <div className="flex min-h-screen items-center">
-          <div className="max-w-3xl py-8 md:py-32 -mt-8 md:mt-0">
+          <div className="max-w-3xl py-8 md:py-32 mt-8 md:mt-0">
             {subtitle && (
               <p className="subheading mb-6 text-accent-light">{subtitle}</p>
             )}
@@ -88,7 +88,7 @@ export function Hero({
             )}
 
             {/* CTAs */}
-            <div className="flex flex-col items-center gap-3 sm:items-start sm:flex-row -mt-8 md:mt-0">
+            <div className="flex flex-col items-center gap-3 sm:items-start sm:flex-row mt-8 md:mt-0">
               {primaryCTA && (
                 <Link
                   href={primaryCTA.href}

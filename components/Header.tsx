@@ -60,7 +60,7 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className={`text-sm font-medium uppercase tracking-wider transition-colors ${
+              className={`text-sm font-medium uppercase tracking-wider transition-all hover:underline hover:underline-offset-4 ${
                 hasWhiteHeader && !isScrolled
                   ? 'text-white hover:text-accent-light'
                   : 'text-primary-950 hover:text-primary-700'
@@ -121,7 +121,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium uppercase tracking-wider text-primary-950 transition-colors hover:text-primary-700"
+                className="text-sm font-medium uppercase tracking-wider text-primary-950 transition-all hover:text-primary-700 hover:underline hover:underline-offset-4"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}

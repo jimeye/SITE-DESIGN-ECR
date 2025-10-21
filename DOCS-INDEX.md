@@ -6,7 +6,7 @@
 
 **Repository GitHub** : [https://github.com/jimeye/SITE-DESIGN-ECR](https://github.com/jimeye/SITE-DESIGN-ECR)
 
-**Commits** : 77 commits poussés avec succès
+**Commits** : 79 commits poussés avec succès
 
 ---
 
@@ -58,7 +58,16 @@
 
 ### 🎨 Optimisations & Features
 
-6. **[OPTIMISATIONS-MOBILE.md](OPTIMISATIONS-MOBILE.md)** ⭐ NOUVEAU
+6. **[AUDIT-SITE.md](AUDIT-SITE.md)** ⭐⭐ NOUVEAU
+   - **Score global : 95/100**
+   - Performance, SEO, Accessibilité, Responsive
+   - Sécurité, UX/UI, Code Quality
+   - Core Web Vitals estimés
+   - Recommandations priorisées
+   - Plan d'action 30 jours
+   - 750 lignes d'analyse détaillée
+
+7. **[OPTIMISATIONS-MOBILE.md](OPTIMISATIONS-MOBILE.md)** ⭐ NOUVEAU
    - **Boutons Hero** : Dimensions, textes, layout
    - **Layout responsive** : Grilles, colonnes, espacements
    - **Header adaptatif** : Logo position par orientation
@@ -69,7 +78,7 @@
    - **Tests effectués** : Résolutions validées
    - **Commits récents** : Détails des 5 derniers commits
 
-7. **[SEO-OPTIMIZATION.md](SEO-OPTIMIZATION.md)**
+8. **[SEO-OPTIMIZATION.md](SEO-OPTIMIZATION.md)**
    - Meta tags implémentés
    - Open Graph & Twitter Cards
    - Structured Data (JSON-LD)
@@ -84,12 +93,12 @@
 
 ### 🛠️ Scripts & Outils
 
-8. **[scripts/README.md](scripts/README.md)**
+9. **[scripts/README.md](scripts/README.md)**
    - Script de setup images placeholder
    - Automatisation locale
    - Utilitaires de développement
 
-9. **[public/placeholder-images.md](public/placeholder-images.md)**
+10. **[public/placeholder-images.md](public/placeholder-images.md)**
    - Liste des images nécessaires
    - Dimensions requises
    - Emplacements des fichiers
@@ -114,6 +123,9 @@
 ### "Je veux voir ce qui a été fait"
 👉 [SUMMARY.md](SUMMARY.md) section "Améliorations récentes"
 
+### "Je veux auditer le site"
+👉 [AUDIT-SITE.md](AUDIT-SITE.md) ⭐ Analyse complète 95/100
+
 ### "J'ai un problème"
 👉 [DEMARRAGE-RAPIDE.md](DEMARRAGE-RAPIDE.md) section "Problèmes"
 
@@ -129,11 +141,12 @@
 - **Tests** : 12 tests unitaires
 
 ### Documentation
-- **Fichiers .md** : 9 fichiers de documentation
+- **Fichiers .md** : 10 fichiers de documentation
 - **Guides** : 3 guides de démarrage
 - **Docs techniques** : 2 fichiers
 - **Optimisations** : 2 fichiers spécialisés
-- **Total pages doc** : ~1500+ lignes
+- **Audit** : 1 rapport complet (750 lignes)
+- **Total pages doc** : ~2250+ lignes
 
 ### Déploiement
 - **Commits** : 77 commits

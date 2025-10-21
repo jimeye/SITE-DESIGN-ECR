@@ -97,19 +97,9 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              // Force refresh on orientation change with viewport fix
+              // Force refresh on orientation change
               let currentOrientation = window.orientation;
-              
-              // Fix viewport on orientation change
-              function fixViewport() {
-                const viewport = document.querySelector('meta[name="viewport"]');
-                if (viewport) {
-                  viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
-                }
-              }
-              
               window.addEventListener('orientationchange', function() {
-                fixViewport();
                 setTimeout(function() {
                   if (currentOrientation !== window.orientation) {
                     window.location.reload();

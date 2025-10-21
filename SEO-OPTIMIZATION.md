@@ -1,5 +1,13 @@
 # 🚀 SEO Optimization - Site ECR
 
+## 🌐 Site en ligne
+
+**Vercel** : [https://site-design-ecr.vercel.app/](https://site-design-ecr.vercel.app/)
+
+**Status SEO** : ✅ Entièrement optimisé et déployé !
+
+---
+
 ## ✅ SEO déjà implémenté
 
 ### **1. Meta Tags (toutes les pages)**
@@ -30,20 +38,25 @@
 
 ### **5. Sitemap.xml**
 - ✅ Généré dynamiquement (app/sitemap.ts)
-- ✅ Toutes les pages incluses sauf /logos
-- ✅ Priorités configurées
+- ✅ Toutes les pages incluses (sauf /logos exclu)
+- ✅ Priorités configurées par type de page
 - ✅ Change frequency définie
+- ✅ Accessible via : https://site-design-ecr.vercel.app/sitemap.xml
 
 ### **6. robots.txt**
 - ✅ Permet tous les crawlers
 - ✅ Référence le sitemap
+- ✅ Accessible via : https://site-design-ecr.vercel.app/robots.txt
 
 ### **7. Performance**
 - ✅ Server Components par défaut
-- ✅ Images optimisées (next/image)
-- ✅ Lazy loading
+- ✅ Images optimisées (next/image + Sharp)
+- ✅ Lazy loading automatique
 - ✅ Code splitting automatique
-- ✅ Compression activée
+- ✅ Compression activée (Vercel)
+- ✅ CDN global (Vercel Edge Network)
+- ✅ Responsive images avec srcset
+- ✅ Preload critical assets
 
 ### **8. Accessibilité (améliore le SEO)**
 - ✅ HTML sémantique

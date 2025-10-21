@@ -102,3 +102,99 @@ export function OrganizationJsonLd() {
   )
 }
 
+export function LocalBusinessJsonLd() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ecr-agencement.fr'
+  
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'LocalBusiness',
+          '@id': siteUrl,
+          name: 'ECR - Étude Conception Réalisations',
+          alternateName: 'ECR Agencement',
+          image: `${siteUrl}/og-image.jpg`,
+          url: siteUrl,
+          telephone: '+33148430509',
+          email: 'ecr@club-internet.fr',
+          priceRange: '€€€',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '7, rue Bernard',
+            addressLocality: 'Bobigny',
+            postalCode: '93000',
+            addressCountry: 'FR',
+            addressRegion: 'Île-de-France',
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 48.9058,
+            longitude: 2.4422,
+          },
+          openingHoursSpecification: [
+            {
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+              opens: '08:00',
+              closes: '18:00',
+            },
+          ],
+          sameAs: [
+            process.env.NEXT_PUBLIC_INSTAGRAM_URL || '',
+            process.env.NEXT_PUBLIC_FACEBOOK_URL || '',
+          ],
+          areaServed: {
+            '@type': 'GeoCircle',
+            geoMidpoint: {
+              '@type': 'GeoCoordinates',
+              latitude: 48.9058,
+              longitude: 2.4422,
+            },
+            geoRadius: '50000', // 50km radius
+          },
+          knowsAbout: [
+            'Menuiserie sur-mesure',
+            "Rénovation d'intérieur",
+            'Agencement haut de gamme',
+            'Dressing sur-mesure',
+            'Bibliothèque murale',
+            'Cuisine sur-mesure',
+          ],
+          hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: 'Services ECR',
+            itemListElement: [
+              {
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: 'Menuiserie sur-mesure',
+                  description: 'Création de mobilier et rangements sur-mesure avec finitions luxueuses',
+                },
+              },
+              {
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: "Rénovation d'intérieur",
+                  description: 'Rénovation complète d\'appartements et maisons avec matériaux haut de gamme',
+                },
+              },
+              {
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: 'Agencement',
+                  description: 'Conception et optimisation d\'espaces avec mobilier intégré',
+                },
+              },
+            ],
+          },
+        }),
+      }}
+    />
+  )
+}
+

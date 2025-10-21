@@ -88,7 +88,7 @@ export function Hero({
             )}
 
             {/* CTAs */}
-            <div className="flex flex-col items-center gap-4 sm:items-start sm:flex-row">
+            <div className="flex flex-col items-center gap-4 sm:items-start sm:flex-row -mt-4 md:mt-0">
               {primaryCTA && (
                 <Link
                   href={primaryCTA.href}

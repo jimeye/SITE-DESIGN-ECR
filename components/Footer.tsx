@@ -47,11 +47,13 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-8 md:gap-12 lg:grid-cols-4">
           {/* About Column */}
           <div className="col-span-2 lg:col-span-2">
-            <h3 className="mb-4 font-serif text-2xl font-light">
-              ECR
-              <span className="mt-2 block text-sm font-sans uppercase tracking-widest text-accent-light">
+            <h3 className="mb-4">
+              <div className="font-sans text-2xl font-bold tracking-[0.15em] leading-none mb-0.5">
+                ECR
+              </div>
+              <div className="font-sans text-sm font-bold uppercase tracking-widest leading-none text-accent-light">
                 Étude Conception Réalisations
-              </span>
+              </div>
             </h3>
             <p className="mb-6 text-sm leading-relaxed text-neutral-beige/80">
               Menuiserie, Rénovation d&apos;intérieur et Agencement haut de gamme.

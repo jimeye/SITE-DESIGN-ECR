@@ -2,7 +2,11 @@
 
 import { useState } from 'react'
 
-export function AddressPopup() {
+interface AddressPopupProps {
+  theme?: 'light' | 'dark'
+}
+
+export function AddressPopup({ theme = 'dark' }: AddressPopupProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   const navigationLinks = [
@@ -40,11 +44,15 @@ export function AddressPopup() {
       {/* Address - clickable */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group cursor-pointer text-left transition-colors hover:text-accent-light"
+        className={`group cursor-pointer text-left transition-colors ${
+          theme === 'dark' ? 'hover:text-accent-light' : 'hover:text-primary-600'
+        }`}
       >
         <p className="group-hover:underline">7, rue Bernard</p>
         <p className="group-hover:underline">93000 BOBIGNY</p>
-        <p className="mt-1 text-xs uppercase tracking-wider opacity-70">
+        <p className={`mt-1 text-xs uppercase tracking-wider ${
+          theme === 'dark' ? 'text-neutral-beige/60' : 'text-primary-600'
+        }`}>
           Cliquez pour l&apos;itinéraire
         </p>
       </button>

@@ -34,7 +34,7 @@ export default function ContactPage() {
                 {/* Address */}
                 <div>
                   <h3 className="subheading mb-3">Adresse</h3>
-                  <AddressPopup />
+                  <AddressPopup theme="light" />
                 </div>
 
                 {/* Phone */}

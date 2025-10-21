@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { AddressPopup } from './AddressPopup'
 
 const footerLinks = {
   navigation: [
@@ -58,38 +59,7 @@ export function Footer() {
               à Paris et région parisienne.
             </p>
             <div className="space-y-2 text-sm text-neutral-beige/80">
-              <div>
-                <p>7, rue Bernard</p>
-                <p>93000 BOBIGNY</p>
-                <div className="mt-2 flex gap-3 text-xs">
-                  <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=7+rue+Bernard+93000+Bobigny+France"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="uppercase tracking-wider transition-colors hover:text-accent-light"
-                  >
-                    Google Maps
-                  </a>
-                  <span className="text-neutral-beige/40">·</span>
-                  <a
-                    href="https://waze.com/ul?q=7+rue+Bernard+93000+Bobigny+France&navigate=yes"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="uppercase tracking-wider transition-colors hover:text-accent-light"
-                  >
-                    Waze
-                  </a>
-                  <span className="text-neutral-beige/40">·</span>
-                  <a
-                    href="https://maps.apple.com/?daddr=7+rue+Bernard+93000+Bobigny+France"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="uppercase tracking-wider transition-colors hover:text-accent-light"
-                  >
-                    Plans
-                  </a>
-                </div>
-              </div>
+              <AddressPopup />
               <p className="pt-2">
                 <a
                   href="tel:+33148430509"

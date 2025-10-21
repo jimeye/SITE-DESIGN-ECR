@@ -88,11 +88,11 @@ export function Hero({
             )}
 
             {/* CTAs */}
-            <div className="flex flex-col items-center gap-3 sm:items-start sm:flex-row mt-12 md:mt-0">
+            <div className="flex flex-col items-center gap-3 sm:items-start sm:flex-row mt-8 md:mt-0">
               {primaryCTA && (
                 <Link
                   href={primaryCTA.href}
-                  className="btn-primary min-w-[200px] bg-accent text-primary-950 hover:bg-accent-dark sm:min-w-[240px]"
+                  className="btn-primary w-[160px] bg-accent text-primary-950 hover:bg-accent-dark sm:min-w-[240px]"
                 >
                   {primaryCTA.text}
                 </Link>
@@ -100,7 +100,7 @@ export function Hero({
               {secondaryCTA && (
                 <Link
                   href={secondaryCTA.href}
-                  className="btn-secondary min-w-[200px] border-white text-white hover:bg-white hover:text-primary-950 sm:min-w-[240px]"
+                  className="btn-secondary w-[160px] border-white text-white hover:bg-white hover:text-primary-950 sm:min-w-[240px]"
                 >
                   {secondaryCTA.text}
                 </Link>

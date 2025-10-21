@@ -94,6 +94,21 @@ export default function RootLayout({
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Force refresh on orientation change
+              let currentOrientation = window.orientation;
+              window.addEventListener('orientationchange', function() {
+                setTimeout(function() {
+                  if (currentOrientation !== window.orientation) {
+                    window.location.reload();
+                  }
+                }, 100);
+              });
+            `,
+          }}
+        />
       </body>
     </html>
   )

@@ -58,7 +58,7 @@
   }
 
   .btn-primary {
-    @apply btn bg-primary-950 text-neutral-cream hover:bg-primary-800 focus-visible:ring-primary-700;
+    @apply btn border-2 border-primary-950 bg-primary-950 text-neutral-cream hover:bg-transparent hover:text-primary-950 focus-visible:ring-primary-700;
   }
 
   .btn-secondary {

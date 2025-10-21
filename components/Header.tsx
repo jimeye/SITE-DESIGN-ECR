@@ -111,7 +111,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`overflow-hidden transition-all duration-700 ease-in-out md:hidden ${
+        className={`overflow-hidden transition-all duration-1000 ease-in-out md:hidden ${
           isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'
         }`}
       >

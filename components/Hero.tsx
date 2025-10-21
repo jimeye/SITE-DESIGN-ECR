@@ -69,26 +69,26 @@ export function Hero({
       {/* Contenu par-dessus l'image */}
       <div className="container-custom relative z-10">
         <div className="flex min-h-screen items-center">
-          <div className="max-w-3xl py-16 md:py-32 -mt-8 md:mt-0">
+          <div className="max-w-3xl py-8 md:py-32 -mt-8 md:mt-0">
             {subtitle && (
               <p className="subheading mb-6 text-accent-light">{subtitle}</p>
             )}
-            <h1 className="heading-xl mb-6 text-balance text-white sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="heading-xl mb-4 text-balance text-white sm:text-3xl md:text-5xl lg:text-6xl">
               {title}
             </h1>
             {tagline && (
-              <p className="mb-8 text-2xl font-light leading-relaxed text-accent-light sm:text-3xl md:text-4xl">
+              <p className="mb-6 text-xl font-light leading-relaxed text-accent-light sm:text-2xl md:text-4xl">
                 {tagline}
               </p>
             )}
             {description && (
-              <p className="mb-10 max-w-2xl text-lg leading-relaxed text-neutral-beige sm:text-xl">
+              <p className="mb-8 max-w-2xl text-base leading-relaxed text-neutral-beige sm:text-lg">
                 {description}
               </p>
             )}
 
             {/* CTAs */}
-            <div className="flex flex-col items-center gap-4 sm:items-start sm:flex-row -mt-8 md:mt-0">
+            <div className="flex flex-col items-center gap-3 sm:items-start sm:flex-row -mt-8 md:mt-0">
               {primaryCTA && (
                 <Link
                   href={primaryCTA.href}

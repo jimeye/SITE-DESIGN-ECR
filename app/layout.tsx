@@ -99,7 +99,6 @@ export default function RootLayout({
             __html: `
               // Force refresh on orientation change with viewport fix
               let currentOrientation = window.orientation;
-              let isInitialLoad = true;
               
               // Fix viewport on orientation change
               function fixViewport() {
@@ -110,14 +109,9 @@ export default function RootLayout({
               }
               
               window.addEventListener('orientationchange', function() {
-                if (isInitialLoad) {
-                  isInitialLoad = false;
-                  fixViewport();
-                  return;
-                }
+                fixViewport();
                 setTimeout(function() {
                   if (currentOrientation !== window.orientation) {
-                    fixViewport();
                     window.location.reload();
                   }
                 }, 100);

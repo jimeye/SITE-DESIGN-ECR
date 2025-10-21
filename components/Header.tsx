@@ -42,11 +42,8 @@ export function Header() {
         className="container-custom flex items-center justify-between py-3 md:justify-between"
         aria-label="Navigation principale"
       >
-        {/* Mobile hamburger spacer (invisible, pour équilibrer) */}
-        <div className="w-8 md:hidden"></div>
-
-        {/* Logo - À droite sur mobile paysage, gauche sur desktop */}
-        <Link href="/" className="flex items-center md:order-first sm:order-last" aria-label="Accueil ECR">
+        {/* Logo - À gauche sur mobile paysage, gauche sur desktop */}
+        <Link href="/" className="flex items-center md:order-first" aria-label="Accueil ECR">
           <Logo
             className={`transition-colors ${
               hasWhiteHeader && !isScrolled ? 'text-white' : 'text-primary-950'
@@ -71,10 +68,10 @@ export function Header() {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - À droite sur mobile paysage */}
         <button
           type="button"
-          className="flex flex-col items-center justify-center space-y-1.5 md:hidden"
+          className="flex flex-col items-center justify-center space-y-1.5 md:hidden ml-auto"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-expanded={isMobileMenuOpen}
           aria-label="Menu de navigation"

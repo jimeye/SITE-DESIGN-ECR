@@ -1,20 +1,10 @@
-'use client'
-
-import { useState } from 'react'
 import Link from 'next/link'
 import { Hero } from '@/components/Hero'
 import { ProjectCard } from '@/components/ProjectCard'
 import { AnimatedCard } from '@/components/AnimatedSection'
-import { projects, getAllTags } from '@/data/projects'
+import { projects } from '@/data/projects'
 
 export default function PortfolioPage() {
-  const [selectedTag, setSelectedTag] = useState<string>('Tous')
-  const allTags = ['Tous', ...getAllTags()]
-
-  const filteredProjects =
-    selectedTag === 'Tous'
-      ? projects
-      : projects.filter((project) => project.tags.includes(selectedTag))
 
   return (
     <>

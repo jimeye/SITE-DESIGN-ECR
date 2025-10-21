@@ -39,11 +39,14 @@ export function Header() {
       }`}
     >
       <nav
-        className="container-custom flex items-center justify-between py-3"
+        className="container-custom flex items-center justify-between py-3 md:justify-between"
         aria-label="Navigation principale"
       >
-        {/* Logo */}
-        <Link href="/" className="flex items-center" aria-label="Accueil ECR">
+        {/* Mobile hamburger spacer (invisible, pour équilibrer) */}
+        <div className="w-8 md:hidden"></div>
+
+        {/* Logo - Centré sur mobile/tablette, gauche sur desktop */}
+        <Link href="/" className="flex items-center md:order-first" aria-label="Accueil ECR">
           <Logo
             className={`transition-colors ${
               hasWhiteHeader && !isScrolled ? 'text-white' : 'text-primary-950'

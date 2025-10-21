@@ -80,7 +80,7 @@ export function Header() {
           aria-label="Menu de navigation"
         >
           <span
-            className={`block h-0.5 w-6 transition-all duration-300 ${
+            className={`block h-0.5 w-6 transition-all duration-1000 ease-in-out ${
               isMobileMenuOpen
                 ? 'translate-y-2 rotate-45 bg-primary-950'
                 : hasWhiteHeader && !isScrolled
@@ -89,7 +89,7 @@ export function Header() {
             }`}
           />
           <span
-            className={`block h-0.5 w-6 transition-all duration-300 ${
+            className={`block h-0.5 w-6 transition-all duration-1000 ease-in-out ${
               isMobileMenuOpen
                 ? 'opacity-0 bg-primary-950'
                 : hasWhiteHeader && !isScrolled
@@ -98,7 +98,7 @@ export function Header() {
             }`}
           />
           <span
-            className={`block h-0.5 w-6 transition-all duration-300 ${
+            className={`block h-0.5 w-6 transition-all duration-1000 ease-in-out ${
               isMobileMenuOpen
                 ? '-translate-y-2 -rotate-45 bg-primary-950'
                 : hasWhiteHeader && !isScrolled

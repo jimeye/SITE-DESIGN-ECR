@@ -59,7 +59,7 @@
 
   @media (max-width: 896px) {
     .btn {
-      @apply py-2.5;
+      @apply py-2;
     }
   }
 

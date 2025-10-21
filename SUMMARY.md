@@ -155,8 +155,8 @@ Tout le contenu est en **français** et adapté à ECR :
 - **Lignes de code** : ~5000+ lignes
 - **Tests** : 12 tests unitaires
 - **Design tokens** : Palette complète dans Tailwind
-- **Commits** : 59 commits sur GitHub
-- **Déploiement** : Site en ligne sur Vercel
+- **Commits** : 72 commits sur GitHub
+- **Déploiement** : Site en ligne sur Vercel (https://site-design-ecr.vercel.app/)
 
 ## ⚡ Commandes rapides
 
@@ -187,7 +187,7 @@ pnpm lint
 6. ✅ Déployé sur Vercel - FAIT (https://site-design-ecr.vercel.app/)
 7. ⏳ Connecter domaine ecr-agencement.fr
 
-## 🎨 Améliorations récentes (59 commits)
+## 🎨 Améliorations récentes (72 commits)
 
 ### ✅ Fonctionnalités ajoutées
 - [x] **Animations Framer Motion** - Scroll-triggered animations sur toutes les pages
@@ -196,15 +196,24 @@ pnpm lint
 - [x] **Favicon ECR** - Logo personnalisé dans les onglets
 - [x] **SEO optimisé** - Image OG fonctionnelle, métadonnées complètes
 - [x] **Responsive avancé** - Optimisations mobile portrait/paysage
-- [x] **Header adaptatif** - Logo à droite en mode paysage
-- [x] **Refresh orientation** - Rechargement automatique au pivot
+- [x] **Header adaptatif** - Logo centré mobile/tablette, à gauche en paysage
+- [x] **Viewport optimisé** - Gestion du zoom et scaling sur mobile
 
 ### 🎨 Design & UX
-- [x] **Typographie harmonisée** - Footer aligné sur header
-- [x] **Espacement optimisé** - Hero adapté mobile/desktop
-- [x] **Boutons cohérents** - Taille standardisée
-- [x] **Layout mobile** - Services en 1 colonne, processus en 2 colonnes
-- [x] **Animations subtiles** - Transitions fluides, hover effects
+- [x] **Typographie harmonisée** - Footer aligné sur header, logo ECR cohérent
+- [x] **Espacement optimisé** - Hero adapté mobile/desktop avec ajustements fins
+- [x] **Boutons optimisés mobile** :
+  - Largeur réduite de 20% (160px)
+  - Hauteur ultra-compacte (py-2 = 8px)
+  - Textes courts : "NOS SERVICES" / "NOS RÉALISATIONS"
+  - Disposition côte à côte
+  - Textes parfaitement centrés
+- [x] **Layout mobile avancé** :
+  - Services : 2 colonnes en portrait, 3 en paysage
+  - Processus : 2 colonnes
+  - Filtres cachés (trop peu de projets)
+  - Hero compact et proportionné
+- [x] **Animations subtiles** - Transitions fluides, hover effects, menu ralenti
 
 ### 🔧 Optimisations techniques
 - [x] **Build production** - Configuration Vercel optimisée
@@ -212,6 +221,8 @@ pnpm lint
 - [x] **Images optimisées** - Sharp intégré pour performance
 - [x] **TypeScript strict** - Exclusions de build configurées
 - [x] **ESLint configuré** - Règles adaptées au français
+- [x] **Sitemap dynamique** - Page /logos exclue
+- [x] **Container widescreen** - max-w-screen-2xl pour écrans larges
 
 ## 🎨 Prochaines améliorations possibles
 

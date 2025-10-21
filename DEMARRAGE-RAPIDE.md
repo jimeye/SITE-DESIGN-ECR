@@ -117,5 +117,13 @@ Normal ! Ajoutez des images ou lancez le script placeholder.
 
 ---
 
+## 🌐 Site en ligne
+
+**URL Vercel** : [https://site-design-ecr.vercel.app/](https://site-design-ecr.vercel.app/)
+
+**GitHub** : [https://github.com/jimeye/SITE-DESIGN-ECR](https://github.com/jimeye/SITE-DESIGN-ECR)
+
+---
+
 **Bon développement ! 🚀**
 

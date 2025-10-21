@@ -193,14 +193,17 @@ NEXT_PUBLIC_FACEBOOK_URL=https://facebook.com/ecr
 
 - ✅ Page d'accueil avec hero, services, processus, portfolio, témoignages
 - ✅ Pages services détaillées avec tarifs et livrables
-- ✅ Portfolio filtrable avec études de cas
+- ✅ Portfolio avec études de cas et lightbox galerie
 - ✅ Formulaire de contact avec validation
-- ✅ Navigation responsive avec menu mobile
-- ✅ SEO optimisé (meta tags, Open Graph, JSON-LD)
+- ✅ Navigation responsive avec menu mobile optimisé
+- ✅ SEO optimisé (meta tags, Open Graph, JSON-LD, sitemap)
 - ✅ Accessibilité WCAG AA
-- ✅ Mode sombre (toggle disponible)
+- ✅ Animations Framer Motion scroll-triggered
+- ✅ Popup adresse avec choix d'itinéraires (Google Maps, Waze, Apple Plans)
+- ✅ Responsive avancé mobile portrait/paysage
 - ✅ Tests unitaires
 - ✅ CI/CD avec GitHub Actions
+- ✅ Déployé sur Vercel
 
 ## 🧪 Tests
 
@@ -242,6 +245,14 @@ Le site respecte les normes WCAG 2.1 niveau AA :
 - HTML sémantique
 - Alt text sur toutes les images
 - Focus visible sur tous les éléments interactifs
+
+## 🌐 Déploiement
+
+**Site en ligne** : [https://site-design-ecr.vercel.app/](https://site-design-ecr.vercel.app/)
+
+**GitHub** : [https://github.com/jimeye/SITE-DESIGN-ECR](https://github.com/jimeye/SITE-DESIGN-ECR)
+
+**72 commits** poussés avec succès !
 
 ## 📧 Contact
 

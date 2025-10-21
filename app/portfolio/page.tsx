@@ -29,9 +29,8 @@ export default function PortfolioPage() {
       {/* Projects Grid */}
       <section className="section bg-white">
         <div className="container-custom">
-          {filteredProjects.length > 0 ? (
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {filteredProjects.map((project, index) => (
+            {projects.map((project, index) => (
               <AnimatedCard key={project.id} delay={index * 0.1}>
                 <ProjectCard
                   title={project.title}
@@ -43,13 +42,6 @@ export default function PortfolioPage() {
               </AnimatedCard>
             ))}
           </div>
-          ) : (
-            <div className="py-20 text-center">
-              <p className="text-lg text-primary-700">
-                Aucun projet trouvé pour cette catégorie.
-              </p>
-            </div>
-          )}
         </div>
       </section>
 

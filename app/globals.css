@@ -57,6 +57,12 @@
     @apply inline-flex items-center justify-center rounded-none px-7 py-3.5 text-[0.81rem] font-medium uppercase tracking-wider transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
   }
 
+  @media (max-width: 640px) {
+    .btn {
+      @apply py-3;
+    }
+  }
+
   .btn-primary {
     @apply btn border-2 border-primary-950 bg-primary-950 text-neutral-cream hover:bg-transparent hover:text-primary-950 focus-visible:ring-primary-700;
   }

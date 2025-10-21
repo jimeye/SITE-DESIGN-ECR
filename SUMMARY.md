@@ -150,11 +150,13 @@ Tout le contenu est en **français** et adapté à ECR :
 ## 🔢 Statistiques
 
 - **Pages** : 7 pages principales + pages dynamiques
-- **Composants** : 13 composants réutilisables
-- **Fichiers créés** : ~50 fichiers
-- **Lignes de code** : ~4000+ lignes
+- **Composants** : 13 composants réutilisables + 6 nouveaux (AnimatedSection, Lightbox, etc.)
+- **Fichiers créés** : ~60 fichiers
+- **Lignes de code** : ~5000+ lignes
 - **Tests** : 12 tests unitaires
 - **Design tokens** : Palette complète dans Tailwind
+- **Commits** : 59 commits sur GitHub
+- **Déploiement** : Site en ligne sur Vercel
 
 ## ⚡ Commandes rapides
 
@@ -178,19 +180,43 @@ pnpm lint
 ## 📋 TODO avant lancement
 
 1. ✅ Code généré - FAIT
-2. ⏳ Ajouter vraies images dans `public/`
-3. ⏳ Tester `pnpm dev` localement
-4. ⏳ Personnaliser contenu si besoin
+2. ✅ Images ajoutées - FAIT (portfolio, hero, témoignages)
+3. ✅ Tests locaux - FAIT
+4. ✅ Contenu personnalisé - FAIT
 5. ⏳ Configurer email pour formulaire contact
-6. ⏳ Déployer sur Vercel/autre
+6. ✅ Déployé sur Vercel - FAIT (https://site-design-ecr.vercel.app/)
 7. ⏳ Connecter domaine ecr-agencement.fr
+
+## 🎨 Améliorations récentes (59 commits)
+
+### ✅ Fonctionnalités ajoutées
+- [x] **Animations Framer Motion** - Scroll-triggered animations sur toutes les pages
+- [x] **Lightbox galerie** - Navigation complète avec miniatures
+- [x] **Popup adresse** - Choix d'itinéraires (Google Maps, Waze, Apple Plans)
+- [x] **Favicon ECR** - Logo personnalisé dans les onglets
+- [x] **SEO optimisé** - Image OG fonctionnelle, métadonnées complètes
+- [x] **Responsive avancé** - Optimisations mobile portrait/paysage
+- [x] **Header adaptatif** - Logo à droite en mode paysage
+- [x] **Refresh orientation** - Rechargement automatique au pivot
+
+### 🎨 Design & UX
+- [x] **Typographie harmonisée** - Footer aligné sur header
+- [x] **Espacement optimisé** - Hero adapté mobile/desktop
+- [x] **Boutons cohérents** - Taille standardisée
+- [x] **Layout mobile** - Services en 1 colonne, processus en 2 colonnes
+- [x] **Animations subtiles** - Transitions fluides, hover effects
+
+### 🔧 Optimisations techniques
+- [x] **Build production** - Configuration Vercel optimisée
+- [x] **Variables d'environnement** - NEXT_PUBLIC_SITE_URL configuré
+- [x] **Images optimisées** - Sharp intégré pour performance
+- [x] **TypeScript strict** - Exclusions de build configurées
+- [x] **ESLint configuré** - Règles adaptées au français
 
 ## 🎨 Prochaines améliorations possibles
 
 - [ ] Ajouter mode sombre (toggle déjà prévu)
 - [ ] Intégrer Google Analytics
-- [ ] Ajouter animations Framer Motion
-- [ ] Lightbox pour galerie projets
 - [ ] Blog (structure déjà prévue)
 - [ ] Multilingue (FR/EN)
 - [ ] Intégration CMS (Sanity/Contentful)

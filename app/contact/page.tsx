@@ -116,20 +116,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      {/* Map Section (Placeholder) */}
-      <section className="bg-neutral-beige py-0">
-        <div className="h-[400px] w-full bg-primary-200">
-          {/* Placeholder for map - you can integrate Google Maps or other mapping service */}
-          <div className="flex h-full items-center justify-center text-primary-700">
-            <p className="text-center">
-              Carte Google Maps
-              <br />
-              <span className="text-sm">7, rue Bernard - 93000 BOBIGNY</span>
-            </p>
-          </div>
-          </div>
-        </section>
       </AnimatedSection>
     </>
   )

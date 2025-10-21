@@ -123,8 +123,8 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-neutral-beige/10">
-        <div className="container-custom flex flex-col items-center justify-between gap-4 py-2 md:flex-row">
-          <div className="text-center md:text-left">
+        <div className="container-custom flex flex-col items-center justify-center gap-4 py-2">
+          <div className="text-center">
             <p className="text-sm text-neutral-beige/60">
               © {currentYear} ECR - Étude Conception Réalisations. Tous droits
               réservés.

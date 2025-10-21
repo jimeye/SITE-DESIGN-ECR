@@ -123,7 +123,7 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-neutral-beige/10">
-        <div className="container-custom flex flex-col items-center justify-center gap-4 py-2">
+        <div className="container-custom py-2">
           <div className="text-center">
             <p className="text-sm text-neutral-beige/60">
               © {currentYear} ECR - Étude Conception Réalisations. Tous droits
@@ -140,22 +140,6 @@ export function Footer() {
                 JOSEPH STUDIO CREATIVE
               </a>
             </p>
-          </div>
-
-          {/* Social Links */}
-          <div className="flex items-center space-x-6">
-            {socialLinks.map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                className="text-neutral-beige/60 transition-colors hover:text-accent-light"
-                aria-label={social.name}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {social.icon}
-              </a>
-            ))}
           </div>
         </div>
       </div>

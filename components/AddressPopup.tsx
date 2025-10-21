@@ -67,36 +67,32 @@ export function AddressPopup({ theme = 'dark' }: AddressPopupProps) {
           />
 
           {/* Popup content */}
-          <div className="absolute bottom-full left-0 z-50 mb-2 w-64 rounded-sm border border-primary-200 bg-white p-4 shadow-xl">
+          <div className="absolute bottom-full left-0 z-50 mb-2 w-44 rounded-sm border border-primary-200 bg-white p-3 shadow-xl">
             {/* Close button */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute right-2 top-2 text-primary-700 transition-colors hover:text-primary-950"
+              className="absolute right-1 top-1 text-primary-700 transition-colors hover:text-primary-950"
               aria-label="Fermer"
             >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
 
-            <p className="mb-4 text-sm font-medium uppercase tracking-wider text-primary-950">
-              Choisir l&apos;application
-            </p>
-
-            <div className="space-y-2">
+            <div className="space-y-1.5">
               {navigationLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-sm bg-neutral-beige px-4 py-3 text-sm font-medium text-primary-950 transition-all hover:bg-primary-950 hover:text-white"
+                  className="flex items-center gap-2 rounded-sm bg-neutral-beige px-3 py-2 text-xs font-medium text-primary-950 transition-all hover:bg-primary-950 hover:text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.icon}
                   <span className="uppercase tracking-wider">{link.name}</span>
                   <svg
-                    className="ml-auto h-4 w-4"
+                    className="ml-auto h-3 w-3"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

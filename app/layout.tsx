@@ -97,17 +97,27 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              // Force refresh on orientation change
+              // Force refresh on orientation change with viewport fix
               let currentOrientation = window.orientation;
               let isInitialLoad = true;
+              
+              // Fix viewport on orientation change
+              function fixViewport() {
+                const viewport = document.querySelector('meta[name="viewport"]');
+                if (viewport) {
+                  viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+                }
+              }
               
               window.addEventListener('orientationchange', function() {
                 if (isInitialLoad) {
                   isInitialLoad = false;
+                  fixViewport();
                   return;
                 }
                 setTimeout(function() {
                   if (currentOrientation !== window.orientation) {
+                    fixViewport();
                     window.location.reload();
                   }
                 }, 100);

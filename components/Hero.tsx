@@ -73,16 +73,16 @@ export function Hero({
             {subtitle && (
               <p className="subheading mb-6 text-accent-light">{subtitle}</p>
             )}
-            <h1 className="heading-xl mb-6 text-balance text-white">
+            <h1 className="heading-xl mb-6 text-balance text-white sm:text-4xl md:text-5xl lg:text-6xl">
               {title}
             </h1>
             {tagline && (
-              <p className="mb-8 text-3xl font-light leading-relaxed text-accent-light md:text-4xl">
+              <p className="mb-8 text-2xl font-light leading-relaxed text-accent-light sm:text-3xl md:text-4xl">
                 {tagline}
               </p>
             )}
             {description && (
-              <p className="mb-10 max-w-2xl text-xl leading-relaxed text-neutral-beige">
+              <p className="mb-10 max-w-2xl text-lg leading-relaxed text-neutral-beige sm:text-xl">
                 {description}
               </p>
             )}
@@ -92,7 +92,7 @@ export function Hero({
               {primaryCTA && (
                 <Link
                   href={primaryCTA.href}
-                  className="btn-primary min-w-[240px] bg-accent text-primary-950 hover:bg-accent-dark"
+                  className="btn-primary min-w-[200px] bg-accent text-primary-950 hover:bg-accent-dark sm:min-w-[240px]"
                 >
                   {primaryCTA.text}
                 </Link>
@@ -100,7 +100,7 @@ export function Hero({
               {secondaryCTA && (
                 <Link
                   href={secondaryCTA.href}
-                  className="btn-secondary min-w-[240px] border-white text-white hover:bg-white hover:text-primary-950"
+                  className="btn-secondary min-w-[200px] border-white text-white hover:bg-white hover:text-primary-950 sm:min-w-[240px]"
                 >
                   {secondaryCTA.text}
                 </Link>

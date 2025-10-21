@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Hero } from '@/components/Hero'
 import { ContactForm } from '@/components/ContactForm'
 import { AnimatedSection } from '@/components/AnimatedSection'
+import { AddressPopup } from '@/components/AddressPopup'
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -33,41 +34,7 @@ export default function ContactPage() {
                 {/* Address */}
                 <div>
                   <h3 className="subheading mb-3">Adresse</h3>
-                  <p className="text-lg text-primary-800">
-                    7, rue Bernard
-                    <br />
-                    93000 BOBIGNY
-                    <br />
-                    France
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-3 text-sm">
-                    <a
-                      href="https://www.google.com/maps/dir/?api=1&destination=7+rue+Bernard+93000+Bobigny+France"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="uppercase tracking-wider text-primary-800 transition-colors hover:text-primary-600"
-                    >
-                      Google Maps
-                    </a>
-                    <span className="text-primary-400">·</span>
-                    <a
-                      href="https://waze.com/ul?q=7+rue+Bernard+93000+Bobigny+France&navigate=yes"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="uppercase tracking-wider text-primary-800 transition-colors hover:text-primary-600"
-                    >
-                      Waze
-                    </a>
-                    <span className="text-primary-400">·</span>
-                    <a
-                      href="https://maps.apple.com/?daddr=7+rue+Bernard+93000+Bobigny+France"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="uppercase tracking-wider text-primary-800 transition-colors hover:text-primary-600"
-                    >
-                      Plans
-                    </a>
-                  </div>
+                  <AddressPopup />
                 </div>
 
                 {/* Phone */}

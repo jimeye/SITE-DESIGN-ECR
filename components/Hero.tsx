@@ -68,8 +68,8 @@ export function Hero({
 
       {/* Contenu par-dessus l'image */}
       <div className="container-custom relative z-10">
-        <div className="flex min-h-screen items-center">
-          <div className="max-w-3xl py-16 md:py-32 -mt-8 md:mt-0">
+        <div className="flex min-h-screen items-start md:items-center">
+          <div className="max-w-3xl py-4 md:py-32 -mt-8 md:mt-0">
             {subtitle && (
               <p className="subheading mb-6 text-accent-light">{subtitle}</p>
             )}

@@ -50,11 +50,6 @@ export function AddressPopup({ theme = 'dark' }: AddressPopupProps) {
       >
         <p className="group-hover:underline">7, rue Bernard</p>
         <p className="group-hover:underline">93000 BOBIGNY</p>
-        <p className={`mt-1 text-xs uppercase tracking-wider ${
-          theme === 'dark' ? 'text-neutral-beige/60' : 'text-primary-600'
-        }`}>
-          Cliquez pour l&apos;itinéraire
-        </p>
       </button>
 
       {/* Popup */}

@@ -45,8 +45,8 @@ export function Header() {
         {/* Mobile hamburger spacer (invisible, pour équilibrer) */}
         <div className="w-8 md:hidden"></div>
 
-        {/* Logo - Centré sur mobile/tablette, gauche sur desktop */}
-        <Link href="/" className="flex items-center md:order-first" aria-label="Accueil ECR">
+        {/* Logo - À droite sur mobile paysage, gauche sur desktop */}
+        <Link href="/" className="flex items-center md:order-first sm:order-last" aria-label="Accueil ECR">
           <Logo
             className={`transition-colors ${
               hasWhiteHeader && !isScrolled ? 'text-white' : 'text-primary-950'

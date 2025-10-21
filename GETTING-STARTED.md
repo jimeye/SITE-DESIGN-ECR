@@ -1,5 +1,13 @@
 # 🚀 Guide de démarrage rapide
 
+## 🌐 Site en ligne
+
+**Vercel** : [https://site-design-ecr.vercel.app/](https://site-design-ecr.vercel.app/)
+
+**GitHub** : [https://github.com/jimeye/SITE-DESIGN-ECR](https://github.com/jimeye/SITE-DESIGN-ECR)
+
+---
+
 ## Étape 1 : Installation des dépendances
 
 Ouvrez le terminal dans le dossier du projet et exécutez :

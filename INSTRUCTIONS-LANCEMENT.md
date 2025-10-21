@@ -2,6 +2,16 @@
 
 Bienvenue ! Voici comment lancer votre nouveau site ECR pas à pas.
 
+## 🌐 Site déjà en ligne
+
+**Vercel** : [https://site-design-ecr.vercel.app/](https://site-design-ecr.vercel.app/)
+
+**GitHub** : [https://github.com/jimeye/SITE-DESIGN-ECR](https://github.com/jimeye/SITE-DESIGN-ECR)
+
+**72 commits** déjà poussés avec succès !
+
+---
+
 ## ✅ Ce qui a été généré
 
 Le site complet avec :
@@ -146,11 +156,11 @@ SITE-DESIGN/
 
 ## 🎯 Prochaines étapes
 
-1. ✅ **Vérifier** que le site se lance (`pnpm dev`)
-2. 📸 **Ajouter** vos vraies photos de projets
-3. ✏️ **Personnaliser** le contenu dans `data/`
-4. 🚀 **Déployer** sur Vercel (gratuit)
-5. 🌐 **Connecter** votre domaine ecr-agencement.fr
+1. ✅ **Vérifier** que le site se lance (`pnpm dev`) - FAIT
+2. ✅ **Ajouter** vos photos de projets - FAIT (5 projets avec galeries)
+3. ✅ **Personnaliser** le contenu dans `data/` - FAIT
+4. ✅ **Déployer** sur Vercel (gratuit) - FAIT
+5. ⏳ **Connecter** votre domaine ecr-agencement.fr - EN ATTENTE
 
 ## 💡 Conseil
 

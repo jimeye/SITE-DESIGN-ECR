@@ -94,7 +94,8 @@ export function Hero({
                   href={primaryCTA.href}
                   className="btn-primary w-[160px] bg-accent text-primary-950 hover:bg-accent-dark sm:min-w-[240px]"
                 >
-                  {primaryCTA.text}
+                  <span className="sm:hidden">NOS SERVICES</span>
+                  <span className="hidden sm:inline">{primaryCTA.text}</span>
                 </Link>
               )}
               {secondaryCTA && (

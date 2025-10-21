@@ -99,7 +99,13 @@ export default function RootLayout({
             __html: `
               // Force refresh on orientation change
               let currentOrientation = window.orientation;
+              let isInitialLoad = true;
+              
               window.addEventListener('orientationchange', function() {
+                if (isInitialLoad) {
+                  isInitialLoad = false;
+                  return;
+                }
                 setTimeout(function() {
                   if (currentOrientation !== window.orientation) {
                     window.location.reload();

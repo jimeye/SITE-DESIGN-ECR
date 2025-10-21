@@ -92,19 +92,19 @@ export function Hero({
               {primaryCTA && (
                 <Link
                   href={primaryCTA.href}
-                  className="btn-primary w-[160px] bg-accent text-primary-950 hover:bg-accent-dark sm:min-w-[240px] sm:w-auto text-center"
+                  className="btn-primary w-[160px] bg-accent text-primary-950 hover:bg-accent-dark md:min-w-[240px] md:w-auto text-center"
                 >
-                  <span className="sm:hidden">NOS SERVICES</span>
-                  <span className="hidden sm:inline">{primaryCTA.text}</span>
+                  <span className="md:hidden">NOS SERVICES</span>
+                  <span className="hidden md:inline">{primaryCTA.text}</span>
                 </Link>
               )}
               {secondaryCTA && (
                 <Link
                   href={secondaryCTA.href}
-                  className="btn-secondary w-[160px] border-white text-white hover:bg-white hover:text-primary-950 sm:min-w-[240px] sm:w-auto text-center"
+                  className="btn-secondary w-[160px] border-white text-white hover:bg-white hover:text-primary-950 md:min-w-[240px] md:w-auto text-center"
                 >
-                  <span className="sm:hidden">NOS RÉALISATIONS</span>
-                  <span className="hidden sm:inline">{secondaryCTA.text}</span>
+                  <span className="md:hidden">NOS RÉALISATIONS</span>
+                  <span className="hidden md:inline">{secondaryCTA.text}</span>
                 </Link>
               )}
             </div>

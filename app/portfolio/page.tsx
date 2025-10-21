@@ -29,12 +29,12 @@ export default function PortfolioPage() {
       {/* Filter Tags */}
       <section className="section-sm bg-neutral-beige">
         <div className="container-custom">
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {allTags.map((tag) => (
               <button
                 key={tag}
                 onClick={() => setSelectedTag(tag)}
-                className={`rounded-none px-6 py-3 text-sm font-medium uppercase tracking-wider transition-all ${
+                className={`rounded-none px-4 py-3 text-center text-sm font-medium uppercase tracking-wider transition-all ${
                   selectedTag === tag
                     ? 'bg-primary-950 text-neutral-cream'
                     : 'bg-white text-primary-950 hover:bg-primary-100'
